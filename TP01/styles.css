@@ -58,3 +58,53 @@ header {
   align-items: center;
 }
 
+nav {
+  background-color: var(--nav-bg);
+  padding: 1rem;
+  border-bottom: 3px solid var(--accent);
+  box-shadow: 0 2px 4px var(--shadow);
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-item {
+  margin: 0 1rem;
+}
+
+.nav-link {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: var(--primary);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover {
+  color: var(--primary);
+}
+
+.nav-link:hover::after {
+  width: 80%;
+}
+
+/* SECCION HERO - NUEVO COMMIT PARA SALVAR AVANCES- tomar inspiracion para el diseño */
