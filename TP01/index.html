@@ -8,7 +8,13 @@
 </head>
 <body>
     <header>
-        <h1>Cultura Argentina</h1>
+        <div class="header-content">
+            <h1>Cultura Argentina</h1>
+            <button id="theme-toggle" aria-label="Cambiar tema">
+                <span class="theme-icon light">☀️</span>
+                <span class="theme-icon dark">🌙</span>
+            </button>
+        </div>
     </header>
     
     <nav>
@@ -37,14 +43,17 @@
             <h2>Aspectos Destacados</h2>
             <div class="grid">
                 <div class="card">
+                    <div class="card-icon">🥩</div>
                     <h3>Gastronomía</h3>
                     <p>La cocina argentina es famosa por sus carnes, especialmente el asado. Otras delicias incluyen las empanadas, el dulce de leche, las milanesas y el mate, la bebida nacional que simboliza la hospitalidad y amistad.</p>
                 </div>
                 <div class="card">
+                    <div class="card-icon">📚</div>
                     <h3>Arte y Literatura</h3>
                     <p>Argentina ha sido cuna de grandes escritores como Jorge Luis Borges, Julio Cortázar y Ernesto Sabato. En las artes plásticas destacan artistas como Xul Solar, Antonio Berni y Benito Quinquela Martín.</p>
                 </div>
                 <div class="card">
+                    <div class="card-icon">💃</div>
                     <h3>Tradiciones</h3>
                     <p>El tango, declarado Patrimonio Cultural Inmaterial de la Humanidad, es quizás la expresión cultural más conocida. También son importantes las tradiciones gauchescas, el folclore y festivales como el Carnaval de Gualeguaychú.</p>
                 </div>
@@ -60,5 +69,7 @@
     <footer>
         <p>&copy; 2025 Cultura Argentina. Todos los derechos reservados.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
