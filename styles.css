@@ -432,3 +432,140 @@ main {
   background-color: var(--instagram);
 }
 
+/* Footer-Pie de Página */
+footer {
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+  text-align: center;
+  padding: 2rem;
+  margin-top: 2rem;
+  box-shadow: 0 -5px 15px var(--shadow);
+}
+
+/* Clases a elementos HTML*/
+/*Estilo de navegación para asegurar que el menú esté centrado*/
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: var(--primary);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+nav ul li a:hover {
+  color: var(--primary);
+}
+
+nav ul li a:hover::after {
+  width: 80%;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.section h2 {
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.section p {
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.museum-content h3 {
+  color: var(--primary);
+  margin-bottom: 0.8rem;
+  font-size: 1.5rem;
+}
+
+.museum-content p {
+  margin-bottom: 1.5rem;
+  color: var(--text-secondary);
+}
+
+.other-museums h2 {
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 0.5rem;
+}
+
+.museums-list li {
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.museums-list li::before {
+  content: "•";
+  color: var(--accent);
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+}
+
+.museums-list li a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.museums-list li a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.contact-info h2 {
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.info-content h3 {
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
